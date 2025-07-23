@@ -1,0 +1,30 @@
+/* 前方引入外部資源-字體*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import './helper/variables';
+@import './helper/media';
+@import './helper/utils';
+
+@import './base/CSSReset';
+@import'./base/base';
+
+/*元件樣式*/
+@import "./components/breadcrumb";
+@import "./components/button";
+
+
+
+@import './layout/header';
+@import './layout/footer';
+
+
+@import './pages/index';
+@import './pages/products';
+@import './pages/product';
+@import './pages/story';
+@import './pages/favorites';
+@import './pages/login';
+
+
+
+

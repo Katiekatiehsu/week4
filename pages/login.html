@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入頁</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <main class="py-64 py-md-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 col-md-4">
+                        <div class="login-banner">
+                            <img class="login-img" src="/assets/images/banner-sm.png" alt="品牌球鞋">
+                                <span class="login-banner-title display-2 h2-md text-white mb-15 mb-md-9">URBNSTEP</span><br>
+                                <span class="login-banner-text h4 h6-md text-neutral-500">Your Step, Your Statement</span>
+                        </div>
+                    </div>
+
+                    <div class="col-7 col-md-4">
+                        <div class="login-bg py-120 py-md-32 px-80 px-md-12 text-center">
+                            <div class="h3 mb-32 mb-md-24">歡迎！</div>
+                            <div class="d-flex mb-32 mb-md-24">
+                                <a class="login-btn h6 py-12" href="login.html">登入</a>
+                                <a class="login-btn h6 py-12" href="register.html">註冊</a>
+                            </div>
+
+                            <ul>
+                                <li class=" mb-8">
+                                    <a class="login-type" href="#"><img src="/assets/images/facebook.svg" alt="facebook" class="me-12">Facebook 登入</a>
+                                </li>
+                                <li class=" mb-8">
+                                    <a class="login-type" href="#"><img src="/assets/images/apple.svg" alt="apple" class="me-12">Apple 登入</a>
+                                </li>
+                                <li class=" mb-8">
+                                    <a class="login-type" href="#"><img src="/assets/images/google.svg" alt="google" class="me-12 mb-8">Google 登入</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+        </main>
+
+
+
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

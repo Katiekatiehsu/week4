@@ -1,0 +1,43 @@
+/* 盒模型 */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    //查看排版 outline: 1px solid;
+}
+
+
+
+/* 全域設定 */
+body {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+    color: $neutral-900;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+
+a {
+    color: $neutral-900;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+
+    &:hover {
+        background-color: $primary-200;
+    }
+}
+
+
+footer {
+    p {
+        color: $neutral-600;
+        text-align: center;
+    }
+}

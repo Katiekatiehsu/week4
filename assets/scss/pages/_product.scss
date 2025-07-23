@@ -1,0 +1,107 @@
+/* 產品圖片product-photo */
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+
+.product-col-6 {
+    padding-left: 4px;
+    padding-right: 4px;
+    width: calc(100% / 12 *6);
+}
+
+@media (max-width: 767px) {
+    .product-overflow-x-md {
+        display: flex;
+        flex-wrap: nowrap; // 禁止換行
+        overflow-x: auto; // 允許橫向捲動
+        -webkit-overflow-scrolling: touch; // 滑動更順
+        gap: 16px; // 卡片間距（替代 padding-right）
+    }
+
+    .width-300-md {
+        min-width: 300px;
+        // flex: 0 0 auto; // 保持原始寬度
+
+    }
+
+    .col-md-4 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: 100%;
+    }
+}
+
+
+
+
+/* 產品描述 */
+.del-price {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $neutral-500;
+}
+
+/* 產品顏色 */
+.product-color {
+    max-width: 64px;
+    text-align: center;
+    font-weight: 500;
+    color: $neutral-600;
+}
+
+/* 產品尺寸 */
+
+.btn-product-size {
+    border: 1px solid $neutral-300;
+    border-radius: 4px;
+    width: 160px;
+
+    &.active,
+    &:hover {
+        border: 1px solid $neutral-900;
+    }
+}
+
+/* 收藏/預約 */
+.product-action {
+    display: flex;
+    gap: 8px;
+
+    .btn {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .product-action .btn-favorite-md {
+        width: calc(48 / 374 * 100%); // 若父容器寬度是 375px
+    }
+    .product-action .btn-reserve-md {
+        width: calc(295 / 375 * 100%);
+    }
+
+}
+
+
+
+/* 產品資訊 */
+.product-info-title {
+    font-weight: 500;
+
+}
+
+.product-info-item p {
+    color: $neutral-600;
+}
+
+
+footer {
+    .active {
+        margin-right: auto;
+    }
+}

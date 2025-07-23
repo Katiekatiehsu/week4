@@ -1,0 +1,73 @@
+/* header */
+.header {
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 151px 0;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    .header{
+        background-image: url(../images/hero-sm.png);
+        padding: 87px 0;
+    }
+}
+
+
+/*banner*/
+
+.slogan {
+    text-align: center;
+    background-color: $primary-100;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px){
+    .slogan{
+        text-align: left;
+    }
+}
+
+
+// 品牌歷程
+.history {
+
+    .lists {
+        list-style: disc;
+        margin-left: 1.5em;
+
+        .year {
+            margin-right: 8px;
+            padding-right: 8px;
+            border-right: 1px solid $neutral-900;
+        }
+    }
+}
+
+
+// 品牌理念
+
+.concept {
+    li {
+        border-left: 3px solid $neutral-300;
+        margin-bottom: 12px;
+        padding-left: 12px;
+    }
+}
+
+
+
+//品牌小故事
+
+
+.story-link {
+    .text{
+        text-underline-offset: 4px; 
+        border-bottom: 1px solid $primary-400;
+    }
+    a{
+        padding: 8px 0px;
+    }
+}

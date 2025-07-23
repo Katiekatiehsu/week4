@@ -1,0 +1,16 @@
+
+
+/* RWD斷點設定 */
+
+@mixin medium{
+    @media(max-width:767px){
+        @content;
+    }
+}
+
+
+@mixin small{
+  @media(max-width:576px){
+    @content;
+  }
+}

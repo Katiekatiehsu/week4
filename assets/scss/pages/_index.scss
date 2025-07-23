@@ -1,0 +1,178 @@
+.index-nav {
+  a {
+    width: 50vw;
+  }
+
+}
+
+/* banner */
+.banner {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 288px 0px;
+  padding-left: 200px;
+  text-align: left;
+
+  .btn {
+    padding: 12px 24px;
+  }
+
+  @include medium {
+    background-image: url(../images/banner-sm.png);
+    padding: 155px 0;
+    padding-left: 24px;
+  }
+
+}
+
+// @media (max-width: 767px) {
+//   .banner {
+//     background-image: url(../images/banner-sm.png);
+//     padding: 155px 0;
+//     padding-left: 24px;
+//   }
+// }
+
+/* 熱銷補貨 */
+
+.product-grid {
+  display: grid;
+  place-items: start;
+  /* 將內容從左上開始排列 */
+}
+
+.product-grid>* {
+  grid-area: 1 / 1;
+  /* 所有子元素疊在一起 */
+}
+
+.badge-top {
+  background-color: $primary-100;
+  color: $primary-400;
+  font-size: 0.875rem;
+  padding: 8px 12px;
+  z-index: 1;
+  /* 保險加上，避免被圖片壓住 */
+}
+
+
+
+/* banner-2 跨界聯名，限量發售 */
+.banner-2 {
+  background-image: url(/assets/images/banner-co-branded.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  position: relative;
+
+  .star-img {
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    left: calc(50% - 397px);
+  }
+
+  .sparkle-img {
+    position: absolute;
+    width: 76px;
+    bottom: 132px;
+    right: calc(50% - 357px);
+  }
+
+}
+
+@media (max-width: 767px) {
+  .banner-2 {
+    background-image: url(/assets/images/banner-co-branded-sm.png);
+    padding: 64px 0;
+    overflow: hidden;
+
+    .btn {
+      padding: 12px 24px;
+    }
+  }
+
+  .star-img {
+    top: 32px;
+    left: -20px;
+  }
+
+  .sparkle-img {
+    bottom: 104px;
+    right: -28px;
+  }
+
+}
+
+
+
+/* 依系列選購 */
+
+.category {
+  position: relative;
+
+  .category-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    color: $neutral-0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* 穿搭靈感*/
+
+.inspiration-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+.inspiration-col-4 {
+  width: calc(100% / 12 * 4);
+  padding: 4px;
+}
+
+.inspiration-col-6 {
+  width: calc(100% / 12 * 6);
+  padding: 4px;
+}
+
+.inspiration-col-12 {
+  width: 100%;
+  padding: 4px;
+}
+
+
+@media (max-width: 767px) {
+  .inspiration-row {
+    flex-wrap: nowrap;
+    margin: 0 -8px;
+
+    img {
+      min-width: 300px;
+    }
+
+    ;
+  }
+
+
+  .inspiration-col-4,
+  .inspiration-col-6,
+  .inspiration-col-12 {
+    width: unset;
+    padding: 8px;
+
+  }
+
+}

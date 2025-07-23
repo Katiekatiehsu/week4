@@ -1,0 +1,85 @@
+.login-banner {
+    
+    position: relative;
+    line-height: 0; /* 防止圖片底下空白 */
+
+    .login-img {
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: 612px;
+
+    }
+
+
+    .login-banner-title {
+        position: absolute;
+        top: 71px;
+        left: 40px;
+    }
+
+    .login-banner-text {
+        position: absolute;
+        top: 144px;
+        left: 145px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .login-img.login-img {
+        border-radius: 0px;
+        height: 240px;
+    }
+
+
+    .login-banner-title {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
+
+    .login-banner-text {
+        position: absolute;
+        top: 71px;
+        left: 24px;
+    }
+}
+
+
+.login-bg{
+    background-color: $neutral-100;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 767px){
+    .login-bg{
+    background-color: transparent;
+    border-radius: 0px;
+}
+}
+
+
+.login-btn{
+    flex: 1;
+    color: $neutral-600;
+    &:hover{
+        color: $neutral-900;
+        border-bottom: 2px solid $neutral-900;
+        background-color: transparent;
+
+
+    }
+}
+
+
+.login-type{
+    text-align: left;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid $neutral-300;
+    background-color: $neutral-0;
+}
