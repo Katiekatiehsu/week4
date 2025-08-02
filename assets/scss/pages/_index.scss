@@ -58,8 +58,8 @@
 
 
 
-/* banner-2 跨界聯名，限量發售 */
-.banner-2 {
+/* banner-ad 跨界聯名，限量發售 */
+.banner-ad {
   background-image: url(/assets/images/banner-co-branded.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,7 +84,7 @@
 }
 
 @media (max-width: 767px) {
-  .banner-2 {
+  .banner-ad {
     background-image: url(/assets/images/banner-co-branded-sm.png);
     padding: 64px 0;
     overflow: hidden;
@@ -110,6 +110,8 @@
 
 /* 依系列選購 */
 
+
+
 .category {
   position: relative;
 
@@ -126,6 +128,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &:hover .h3{
+      color: $primary-300;
+    }
   }
 }
 
